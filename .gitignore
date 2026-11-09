@@ -1,0 +1,46 @@
+# Environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+*.pem
+kaggle.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+
+# Datasets and extracted landmarks
+data/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+*.parquet
+*.npy
+*.npz
+
+# Models (hand_landmarker.task is ~7.8 MB; trained models are re-created by train.py)
+models/
+*.task
+*.joblib
+*.pkl
+*.pt
+*.onnx
+
+# Large or generated outputs
+reports/predictions/
+*.mp4
+*.avi
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/

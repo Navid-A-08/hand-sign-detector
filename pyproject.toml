@@ -1,0 +1,13 @@
+[project]
+name = "hand-sign-detector"
+version = "0.1.0"
+description = "Static ASL fingerspelling detector: MediaPipe hand landmarks + a small MLP"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"

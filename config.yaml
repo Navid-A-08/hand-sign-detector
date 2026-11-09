@@ -1,0 +1,39 @@
+# Hand sign detector configuration. Paths are relative to the repo root.
+paths:
+  data_dir: data
+  landmarks_dir: data/landmarks
+  models_dir: models
+  reports_dir: reports
+  landmarker_model: models/hand_landmarker.task
+
+landmarker:
+  model_url: https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/latest/hand_landmarker.task
+  num_hands: 1
+  min_detection_confidence: 0.5
+  min_presence_confidence: 0.5
+  min_tracking_confidence: 0.5
+
+classes:
+  letters: [A, B, C, D, E, F, G, H, I, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y]
+  nothing_label: nothing
+
+training:
+  seed: 42
+  # Sources left out of the default training set. "grassknoted" is the GPL-2
+  # ASL Alphabet subset found inside the Sau dataset; see README.
+  exclude_sources: [grassknoted]
+  # Cap per (source, group, label) to limit near-duplicate frame bursts. 0 = no cap.
+  max_per_group_label: 0
+  mlp:
+    hidden_layer_sizes: [128, 64]
+    alpha: 0.0001
+    max_iter: 200
+    early_stopping: true
+  baseline:
+    kind: random_forest
+    n_estimators: 300
+
+inference:
+  confidence_threshold: 0.60
+  smoothing_window: 10
+  top_k: 2

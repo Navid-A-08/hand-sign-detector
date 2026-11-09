@@ -1,0 +1,17 @@
+# Pinned and verified to install together in fresh Python 3.11 venvs (pip and uv, Linux x86_64, 2026-11-09).
+# Python 3.11+ is required: numpy 2.4.x dropped Python 3.10.
+# mediapipe 1.2.2 works with NumPy 2.x. It depends on opencv-contrib-python, so do NOT also
+# install opencv-python: both ship the same cv2 package and the last one installed wins.
+mediapipe==1.2.2
+opencv-contrib-python==5.0.0.93
+numpy==2.4.6
+scikit-learn==1.9.1
+scipy==1.17.1
+joblib==1.6.0
+pandas==3.1.1
+pyarrow==26.0.1
+matplotlib==3.11.2
+pyyaml==6.0.3
+kagglehub==1.0.3
+huggingface-hub==2.4.0
+pytest==9.2.0
