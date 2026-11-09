@@ -1,0 +1,47 @@
+{
+  "tag": "clean_no_sau_numeric",
+  "sources": {
+    "aslnow": {
+      "rows": 1874,
+      "detected": 1874
+    },
+    "borisgraudt": {
+      "rows": 9703,
+      "detected": 9703
+    },
+    "sau_paren": {
+      "rows": 20614,
+      "detected": 6026
+    },
+    "sau_rotate": {
+      "rows": 16750,
+      "detected": 8084
+    }
+  },
+  "labels_present": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y"
+  ]
+}

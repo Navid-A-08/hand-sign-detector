@@ -1,0 +1,198 @@
+{
+  "test_set": "danrasband (held out)",
+  "n_images": 750,
+  "mlp": {
+    "n_images": 750,
+    "n_classified": 683,
+    "detection_rate_letters": 0.9486111111111111,
+    "detection_rate_nothing_images": 0.0,
+    "classification_accuracy": 0.8843338213762811,
+    "classification_macro_f1": 0.8811883481530186,
+    "end_to_end_accuracy": 0.8453333333333334,
+    "top_confused_pairs": [
+      {
+        "true": "T",
+        "pred": "X",
+        "count": 9,
+        "share_of_true": 0.3
+      },
+      {
+        "true": "M",
+        "pred": "N",
+        "count": 7,
+        "share_of_true": 0.2593
+      },
+      {
+        "true": "U",
+        "pred": "V",
+        "count": 7,
+        "share_of_true": 0.2333
+      },
+      {
+        "true": "O",
+        "pred": "C",
+        "count": 6,
+        "share_of_true": 0.24
+      },
+      {
+        "true": "N",
+        "pred": "M",
+        "count": 6,
+        "share_of_true": 0.2143
+      },
+      {
+        "true": "H",
+        "pred": "U",
+        "count": 6,
+        "share_of_true": 0.2
+      },
+      {
+        "true": "N",
+        "pred": "S",
+        "count": 5,
+        "share_of_true": 0.1786
+      },
+      {
+        "true": "M",
+        "pred": "S",
+        "count": 4,
+        "share_of_true": 0.1481
+      },
+      {
+        "true": "D",
+        "pred": "C",
+        "count": 4,
+        "share_of_true": 0.1429
+      },
+      {
+        "true": "H",
+        "pred": "V",
+        "count": 4,
+        "share_of_true": 0.1333
+      }
+    ],
+    "per_class_accuracy": {
+      "A": 1.0,
+      "B": 0.931,
+      "C": 1.0,
+      "D": 0.8571,
+      "E": 1.0,
+      "F": 1.0,
+      "G": 1.0,
+      "H": 0.6,
+      "I": 1.0,
+      "K": 1.0,
+      "L": 0.9655,
+      "M": 0.5926,
+      "N": 0.5357,
+      "O": 0.76,
+      "P": 0.8929,
+      "Q": 0.9643,
+      "R": 0.9667,
+      "S": 0.9643,
+      "T": 0.6333,
+      "U": 0.7,
+      "V": 0.9655,
+      "W": 1.0,
+      "X": 0.9,
+      "Y": 1.0
+    }
+  },
+  "random_forest": {
+    "n_images": 750,
+    "n_classified": 683,
+    "detection_rate_letters": 0.9486111111111111,
+    "detection_rate_nothing_images": 0.0,
+    "classification_accuracy": 0.8316251830161054,
+    "classification_macro_f1": 0.8305171175976813,
+    "end_to_end_accuracy": 0.7973333333333333,
+    "top_confused_pairs": [
+      {
+        "true": "U",
+        "pred": "V",
+        "count": 16,
+        "share_of_true": 0.5333
+      },
+      {
+        "true": "R",
+        "pred": "U",
+        "count": 13,
+        "share_of_true": 0.4333
+      },
+      {
+        "true": "N",
+        "pred": "M",
+        "count": 12,
+        "share_of_true": 0.4286
+      },
+      {
+        "true": "M",
+        "pred": "N",
+        "count": 9,
+        "share_of_true": 0.3333
+      },
+      {
+        "true": "T",
+        "pred": "X",
+        "count": 9,
+        "share_of_true": 0.3
+      },
+      {
+        "true": "Q",
+        "pred": "P",
+        "count": 7,
+        "share_of_true": 0.25
+      },
+      {
+        "true": "H",
+        "pred": "R",
+        "count": 7,
+        "share_of_true": 0.2333
+      },
+      {
+        "true": "R",
+        "pred": "V",
+        "count": 6,
+        "share_of_true": 0.2
+      },
+      {
+        "true": "O",
+        "pred": "C",
+        "count": 4,
+        "share_of_true": 0.16
+      },
+      {
+        "true": "V",
+        "pred": "U",
+        "count": 4,
+        "share_of_true": 0.1379
+      }
+    ],
+    "per_class_accuracy": {
+      "A": 1.0,
+      "B": 1.0,
+      "C": 0.9643,
+      "D": 0.9286,
+      "E": 1.0,
+      "F": 1.0,
+      "G": 0.9667,
+      "H": 0.6667,
+      "I": 1.0,
+      "K": 1.0,
+      "L": 1.0,
+      "M": 0.6296,
+      "N": 0.5,
+      "O": 0.84,
+      "P": 0.9286,
+      "Q": 0.7143,
+      "R": 0.3667,
+      "S": 0.9286,
+      "T": 0.5,
+      "U": 0.3667,
+      "V": 0.7586,
+      "W": 1.0,
+      "X": 0.9667,
+      "Y": 1.0
+    }
+  }
+}
